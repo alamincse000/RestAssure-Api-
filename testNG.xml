@@ -1,0 +1,7 @@
+<suite thread-count="1" verbose="1" name="Pages.Customer API automation">
+    <test name="Pages.Customer API automation">
+        <classes>
+            <class name="TestRunner.TestRunner"/>
+        </classes>
+    </test>
+</suite>

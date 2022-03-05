@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class TestRunner.TestRunner</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class TestRunner.TestRunner</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/TestRunner.html">TestRunner</a> &gt; TestRunner</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">14.325s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">85%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="customerDeleteApi"></a>
+<h3 class="failures">customerDeleteApi</h3>
+<span class="code">
+<pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;200&gt;.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at Pages.Customer.customerDelete(Customer.java:184)
+	at TestRunner.TestRunner.customerDeleteApi(TestRunner.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">createCustomerApi</td>
+<td class="success">1.554s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">customerDeleteApi</td>
+<td class="failures">1.590s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">customerUpdateApi</td>
+<td class="success">2.283s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">doLogin</td>
+<td class="success">4.754s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">generateCustomerInfo</td>
+<td class="success">0.902s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getCustomerSearch</td>
+<td class="success">1.494s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getListApi</td>
+<td class="success">1.748s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhbG1hbiIsInJvbGUiOiJtZW1iZXIiLCJpYXQiOjE2NDU5MzM1NzgsImV4cCI6MTY0NTkzNTM3OH0.gDrsP_oZjnrECNUZ9r5I_QHuXEsEJO_cwmDc6PoY4uE
+{&quot;Count&quot;:20,&quot;Customers&quot;:[{&quot;id&quot;:101,&quot;name&quot;:&quot;Mr. Kamal&quot;,&quot;email&quot;:&quot;mrkamal@test.com&quot;,&quot;address&quot;:&quot;Gulshan,Dhaka&quot;,&quot;phone_number&quot;:&quot;01502020110&quot;},{&quot;id&quot;:102,&quot;name&quot;:&quot;Mr. Jamal Islam&quot;,&quot;email&quot;:&quot;mrjamal@test.com&quot;,&quot;address&quot;:&quot;Gulshan,Dhaka&quot;,&quot;phone_number&quot;:&quot;01502020110&quot;},{&quot;email&quot;:&quot;customer103@grr.la&quot;},{&quot;id&quot;:954845,&quot;name&quot;:&quot;Blair Bruen MD&quot;,&quot;email&quot;:&quot;daren71@testmail.com&quot;,&quot;address&quot;:&quot;Dhaka&quot;,&quot;phone_number&quot;:&quot;(701)153-2687&quot;},{&quot;id&quot;:352879,&quot;name&quot;:&quot;Jerod Mueller&quot;,&quot;email&quot;:&quot;trudie47@testmail.com&quot;,&quot;address&quot;:&quot;UK&quot;,&quot;phone_number&quot;:&quot;(835)162-1924x09032&quot;},{&quot;id&quot;:504703,&quot;name&quot;:&quot;Estevan Fritsch&quot;,&quot;email&quot;:&quot;yreichert@testmail.com&quot;,&quot;address&quot;:&quot;USA&quot;,&quot;phone_number&quot;:&quot;(359)418-5803x07051&quot;},{&quot;id&quot;:&quot;20828&quot;,&quot;name&quot;:&quot;Kevin Turcotte&quot;,&quot;email&quot;:&quot;obins@test.com&quot;,&quot;address&quot;:&quot;Newyork,USA&quot;,&quot;phone_number&quot;:&quot;999.552.5891x87012&quot;},{&quot;id&quot;:&quot;96370&quot;,&quot;name&quot;:&quot;Macey Weimann&quot;,&quot;email&quot;:&quot;wgerhold@test.com&quot;,&quot;address&quot;:&quot;Newyork,USA&quot;,&quot;phone_number&quot;:&quot;668-977-7960x74627&quot;},{&quot;id&quot;:52327,&quot;name&quot;:&quot;Brenden Langworth DVM&quot;,&quot;email&quot;:&quot;yjacobson@test.com&quot;,&quot;address&quot;:&quot;Newyork,USA&quot;,&quot;phone_number&quot;:&quot;08363624535&quot;},{&quot;id&quot;:84637,&quot;name&quot;:&quot;Gunner Effertz&quot;,&quot;email&quot;:&quot;veum.lenore@test.com&quot;,&quot;address&quot;:&quot;Newyork,USA&quot;,&quot;phone_number&quot;:&quot;284.180.9944x11485&quot;},{&quot;id&quot;:857348,&quot;name&quot;:&quot;Jamison Okuneva&quot;,&quot;email&quot;:&quot;aileen94@testmail.com&quot;,&quot;address&quot;:&quot;UK&quot;,&quot;phone_number&quot;:&quot;(845)440-1812x8801&quot;},{&quot;id&quot;:287364,&quot;name&quot;:&quot;Dr. Blake Hagenes&quot;,&quot;email&quot;:&quot;sidney25@testmail.com&quot;,&quot;address&quot;:&quot;USA&quot;,&quot;phone_number&quot;:&quot;1-052-654-2022x368&quot;},{&quot;id&quot;:679109,&quot;name&quot;:&quot;Rory Koch DDS&quot;,&quot;email&quot;:&quot;fkemmer@testmail.com&quot;,&quot;address&quot;:&quot;USA&quot;,&quot;phone_number&quot;:&quot;(907)322-2198x549&quot;},{&quot;id&quot;:205172,&quot;name&quot;:&quot;Felton Rath&quot;,&quot;email&quot;:&quot;dandre51@testmail.com&quot;,&quot;address&quot;:&quot;USA&quot;,&quot;phone_number&quot;:&quot;+45(1)5545085666&quot;},{&quot;id&quot;:968419,&quot;name&quot;:&quot;Prof. Dane McKenzie&quot;,&quot;email&quot;:&quot;orion81@testmail.com&quot;,&quot;address&quot;:&quot;USA&quot;,&quot;phone_number&quot;:&quot;+10(1)2973113263&quot;},{&quot;id&quot;:368661,&quot;name&quot;:&quot;Jerod Schinner&quot;,&quot;email&quot;:&quot;adrianna60@testmail.com&quot;,&quot;address&quot;:&quot;BD&quot;,&quot;phone_number&quot;:&quot;732-656-5877x27140&quot;},{&quot;id&quot;:518214,&quot;name&quot;:&quot;Shad Mayert&quot;,&quot;email&quot;:&quot;kiley.greenholt@testmail.com&quot;,&quot;address&quot;:&quot;England&quot;,&quot;phone_number&quot;:&quot;1-506-109-8179&quot;},{&quot;id&quot;:248097,&quot;name&quot;:&quot;Lexus Hickle V&quot;,&quot;email&quot;:&quot;oma15@testmail.com&quot;,&quot;address&quot;:&quot;USA&quot;,&quot;phone_number&quot;:&quot;(332)682-6052x5100&quot;},{&quot;id&quot;:438613,&quot;name&quot;:&quot;Wilford Marks&quot;,&quot;email&quot;:&quot;homenick.milton@testmail.com&quot;,&quot;address&quot;:&quot;USA&quot;,&quot;phone_number&quot;:&quot;1-096-725-4650&quot;},{&quot;id&quot;:820107,&quot;name&quot;:&quot;Jace Kub&quot;,&quot;email&quot;:&quot;bharris@testmail.com&quot;,&quot;address&quot;:&quot;England&quot;,&quot;phone_number&quot;:&quot;381.660.6268x8770&quot;}]}
+{&quot;id&quot;:102,&quot;name&quot;:&quot;Mr. Jamal Islam&quot;,&quot;email&quot;:&quot;mrjamal@test.com&quot;,&quot;address&quot;:&quot;Gulshan,Dhaka&quot;,&quot;phone_number&quot;:&quot;01502020110&quot;}
+{&quot;results&quot;:[{&quot;gender&quot;:&quot;female&quot;,&quot;name&quot;:{&quot;title&quot;:&quot;Mrs&quot;,&quot;first&quot;:&quot;Maysa&quot;,&quot;last&quot;:&quot;Wolswijk&quot;},&quot;location&quot;:{&quot;street&quot;:{&quot;number&quot;:3340,&quot;name&quot;:&quot;Nicolaasweg&quot;},&quot;city&quot;:&quot;Jouswier&quot;,&quot;state&quot;:&quot;Noord-Holland&quot;,&quot;country&quot;:&quot;Netherlands&quot;,&quot;postcode&quot;:45885,&quot;coordinates&quot;:{&quot;latitude&quot;:&quot;40.3863&quot;,&quot;longitude&quot;:&quot;15.3842&quot;},&quot;timezone&quot;:{&quot;offset&quot;:&quot;-3:30&quot;,&quot;description&quot;:&quot;Newfoundland&quot;}},&quot;email&quot;:&quot;maysa.wolswijk@example.com&quot;,&quot;login&quot;:{&quot;uuid&quot;:&quot;af755f69-6cfe-4389-911f-3f95a70a7e4a&quot;,&quot;username&quot;:&quot;yellowduck958&quot;,&quot;password&quot;:&quot;annabell&quot;,&quot;salt&quot;:&quot;X05pHKwf&quot;,&quot;md5&quot;:&quot;78cca467bd86c8cb1265005b5878d6eb&quot;,&quot;sha1&quot;:&quot;f56eb70e4984c12320e17c6ec020df7e522575c4&quot;,&quot;sha256&quot;:&quot;f370378910613a6723cf13e860302e69fb414e38f5b4f94f75198977de353003&quot;},&quot;dob&quot;:{&quot;date&quot;:&quot;1975-12-25T19:19:43.336Z&quot;,&quot;age&quot;:47},&quot;registered&quot;:{&quot;date&quot;:&quot;2008-07-06T12:51:18.448Z&quot;,&quot;age&quot;:14},&quot;phone&quot;:&quot;(406)-492-6335&quot;,&quot;cell&quot;:&quot;(600)-855-5920&quot;,&quot;id&quot;:{&quot;name&quot;:&quot;BSN&quot;,&quot;value&quot;:&quot;61453153&quot;},&quot;picture&quot;:{&quot;large&quot;:&quot;https://randomuser.me/api/portraits/women/62.jpg&quot;,&quot;medium&quot;:&quot;https://randomuser.me/api/portraits/med/women/62.jpg&quot;,&quot;thumbnail&quot;:&quot;https://randomuser.me/api/portraits/thumb/women/62.jpg&quot;},&quot;nat&quot;:&quot;NL&quot;}],&quot;info&quot;:{&quot;seed&quot;:&quot;264d79a820c1be7e&quot;,&quot;results&quot;:1,&quot;page&quot;:1,&quot;version&quot;:&quot;1.3&quot;}}
+{&quot;message&quot;:&quot;Success&quot;,&quot;Customers&quot;:{&quot;name&quot;:&quot;Salman Maysa&quot;,&quot;email&quot;:&quot;maysa.wolswijk@example.com&quot;,&quot;address&quot;:&quot;Noord-Holland&quot;,&quot;phone_number&quot;:&quot;(600)-855-5920&quot;}}
+{&quot;message&quot;:&quot;Success&quot;,&quot;Customers&quot;:{&quot;id&quot;:101,&quot;name&quot;:&quot;Mr. Uzzal Mondol&quot;,&quot;email&quot;:&quot;mrkamal@test.com&quot;,&quot;address&quot;:&quot;Bahrain,Da&quot;,&quot;phone_number&quot;:&quot;01502020110&quot;}}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.3.3</a> at Feb 27, 2022 9:46:29 AM</p>
+</div>
+</div>
+</body>
+</html>
