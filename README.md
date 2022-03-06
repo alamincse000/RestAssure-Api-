@@ -9,9 +9,9 @@ Run CMD in the root folder
 
 Give fllowing command
 
-...
+```
 gradle clean test
-...
+```
 
 ## Technology:
 Intelij
